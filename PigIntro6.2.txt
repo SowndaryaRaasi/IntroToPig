@@ -1,0 +1,61 @@
+                        Introduction toPig
+                          Assignment 6.2
+1. Why MapReduce program is needed in Pig Programming?
+   *Pig programming uses pig latin language to write pig scripts.
+   *Although pig scripts are easy and reduce no. of lines of code, finally they get converted into map reduce jobs by pig engine
+     which needs map reduce program to process such jobs.
+   *So,map reduce program is needed in pig programming.
+
+2. What are advantages of Pig over MapReduce?
+     *Decrease in development time. 
+     *Easy to understand and develop.
+     *Lines Of Code gets minimised to 16 times.
+     *Since it is procedural, control of the execution of every step is possible.
+     *UDF(User Defined Functions) can be written and injected at any point.
+     *Easy to join multiple tables. 
+
+3. What is Pig engine and what is its importance:
+    *Pig scripts have to pass through the following components to produce the expected results:
+           1.Parser
+           2.Optimiser
+           3.Compiler
+           4.Execution Engine
+    *Pig engine is where map reduce jobs are executed.
+           *The MapReduce jobs are submitted to Hadoop in a sorted order. 
+           *Finally, these MapReduce jobs are executed on Hadoop producing the desired results.
+    *IMPORTANCE:
+           *It acts as an interpreter between pig latin script and map reduce jobs.
+           *It creates an environment to execute pig scripts in a series of map reduce jobs in parallel manner.
+
+4. What are the modes of Pig execution?
+   1.Local Mode:
+           *No need to install hadoop.
+           *Pig scripts run in local system.Pig store data in file system.
+           *Java and pig installation is mandatory.
+   2.MapREduce Mode:
+           *It is mandatory to start hadoop.
+           *Pig scripts are stored and run in HDFS
+            *Java and pig installation is mandatory.
+
+5. What is Grunt Shell in Pig?
+    *The Grunt shell of Apache Pig is mainly used to write Pig Latin scripts. 
+     *Also,there are certain useful shell and utility commands provided by the Grunt shell.
+
+6. What are the features of Pig Latin language?
+    *It is a data flow language.
+    *It supports interoperability
+    *It supperts parallelism.
+    *It is very easy and reduces the no. of lines of code to a great extent.
+    *It improves efficiency.
+    
+    
+7. Is Pig Latin commands case sensitive?
+    * The names of Pig Latin functions,relations,fields,  are case sensitive.
+    * All other Pig Latin keywords are case insensitive.
+    * E.g: Keywords LOAD, USING, AS, GROUP, BY, FOREACH, GENERATE, and DUMP are case insensitive. 
+       They can also be written as load, using, as, group, by, etc.
+
+8. What is a data flow language? 
+    *Data flow programming language is a kind of progrmming in which  a program is modelled as a directed graph of the data flowing between operations.
+    *It implements dataflow principles and architecture.It internally represents applications as a directed graph, 
+      similarly to a dataflow diagram. Applications are represented as a set of nodes 
